@@ -1,0 +1,31 @@
+version: "3.1"
+services:
+  banco:
+    image: refbl/mysql
+    
+    restart: always
+    
+    environment:
+      MYSQL_ROOT_PASSWORD: senha
+      
+    container_name: meu_mysql
+      
+    ports:
+      - 3306:3306
+      
+    networks:
+      - compose-bridge
+      
+  app:
+    image: refbl/ctrfin:latest
+    container_name: meu_app
+    ports:
+      - 8080:8080
+    depends_on:
+      - "banco"
+    networks:
+      - compose-bridge
+      
+networks:
+  compose-bridge:
+    driver: bridge

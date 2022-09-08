@@ -3,8 +3,8 @@
 >Projeto Referente ao Challenge Agosto-2022 da Alura - Controle pessoal de Finanças
 
 ## **Gerar o JAR da Aplicação (no diretorio raiz do projeto)**
->1 - Subir o mysql em docker  -> docker run -p:3306:3306 -e MYSQL_ROOT_PASSWORD=teste mysql:8.0
->2 - gerar o jar da aplicação -> mvn clean install
+>1. Subir o mysql em docker  -> docker run -p:3306:3306 -e MYSQL_ROOT_PASSWORD=teste mysql:8.0
+>2. gerar o jar da aplicação -> mvn clean install
 
 ## **Comando para Rodar o Jar da Aplicação (profile prod)**
 >java -jar -Dspring.profiles.active=prod -DCTRFIN_DATASOURCE_URL=jdbc:mysql://localhost:3306/ctrfin -DCTRFIN_DATASOURCE_USERNAME=root -DCTRFIN_DATASOURCE_PASSWORD=teste -DCTRFIN_JWT_EXPIRATION=86400000 -DCTRFIN_JWT_SECRET=123456 ctrfin.jar

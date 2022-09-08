@@ -1,6 +1,6 @@
 
 # **Projeto CtrFin**
-Projeto Referente ao Challenge Agosto-2022 da Alura - Controle pessoal de Finanças
+>Projeto Referente ao Challenge Agosto-2022 da Alura - Controle pessoal de Finanças
 
 ## **Gerar o JAR da Aplicação (no diretorio raiz do projeto)**
 >1 - Subir o mysql em docker  -> docker run -p:3306:3306 -e MYSQL_ROOT_PASSWORD=teste mysql:8.0
